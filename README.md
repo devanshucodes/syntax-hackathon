@@ -1,10 +1,10 @@
- # 🏆 **Hack-Aura: The World's First Fully Autonomous AI Company**
+ # 🏆 **NOman: The World's First Fully Autonomous AI Company**
 
 > **🚀 FutureStack Hackathon Entry - Powered by Cerebras**
 
 ## 🎯 **What We're Building**
 
-**Hack-Aura** is a groundbreaking proof-of-concept for the world's first **fully autonomous AI company** with zero human employees. Our system demonstrates how AI agents can operate as a complete corporate hierarchy, making strategic decisions, developing products, and generating revenue - all while being governed by token holders through decentralized voting.
+**NOman** is a groundbreaking proof-of-concept for the world's first **fully autonomous AI company** with zero human employees. Our system demonstrates how AI agents can operate as a complete corporate hierarchy, making strategic decisions, developing products, and generating revenue - all while being governed by token holders through decentralized voting.
 
 ### 🌟 **The Vision**
 Imagine a company where:
