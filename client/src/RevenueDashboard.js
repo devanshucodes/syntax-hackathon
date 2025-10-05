@@ -16,7 +16,7 @@ function RevenueDashboard() {
 
   const fetchRevenueData = async () => {
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/finance/revenue-history`);
       const data = await response.json();
       
@@ -32,7 +32,7 @@ function RevenueDashboard() {
 
   const fetchContractInfo = async () => {
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/finance/contract-info`);
       const data = await response.json();
       
@@ -46,7 +46,7 @@ function RevenueDashboard() {
 
   const fetchTokenHolders = async () => {
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/finance/token-holders`);
       const data = await response.json();
       

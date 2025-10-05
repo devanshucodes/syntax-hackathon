@@ -51,8 +51,8 @@ function App() {
   const [createFormLoading, setCreateFormLoading] = useState(false);
   const [createFormMessage, setCreateFormMessage] = useState(null);
 
-  // API Base URL
-  const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
+  // API Base URL - Fixed to always use correct backend URL
+  const API_BASE = 'http://localhost:5001/api';
 
   // API Functions
   const fetchCeoAgents = async () => {
@@ -284,7 +284,7 @@ function App() {
   // Load company workflow state from database
   const loadCompanyWorkflow = async (companyId) => {
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/company-workflow/${companyId}`);
       const data = await response.json();
       
@@ -394,7 +394,7 @@ function App() {
     if (!selectedCompany) return;
     
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/company-workflow/${selectedCompany.id}/vote`, {
         method: 'POST',
         headers: {
@@ -473,7 +473,7 @@ function App() {
     
     try {
       // Use the NEW Python uAgent system via orchestrator
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/agents/process-complete-workflow`, {
         method: 'POST',
         headers: {
@@ -554,7 +554,7 @@ function App() {
     setAgentActivity(prev => [...prev, { agent: 'Complete Workflow', action: 'Starting complete AI company workflow...', time: new Date().toLocaleTimeString() }]);
     
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/agents/process-complete-workflow`, {
         method: 'POST',
         headers: {
@@ -675,7 +675,7 @@ function App() {
     setAgentActivity(prev => [...prev, { agent: 'Product Agent', action: 'Developing product concept...', time: new Date().toLocaleTimeString() }]);
     
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/agents/develop-product`, {
         method: 'POST',
         headers: {
@@ -734,7 +734,7 @@ function App() {
         time: new Date().toLocaleTimeString() 
       }]);
       
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const cmoResponse = await fetch(`${apiUrl}/api/agents/marketing-strategy`, {
         method: 'POST',
         headers: {
@@ -870,7 +870,7 @@ function App() {
     console.log('🔧 [FRONTEND] Starting Bolt prompt creation for product:', productData.product_name);
     
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/agents/bolt-prompt`, {
         method: 'POST',
         headers: {
@@ -940,7 +940,7 @@ function App() {
         time: new Date().toLocaleTimeString() 
       }]);
 
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+      const apiUrl = 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/finance/complete-project`, {
         method: 'POST',
         headers: {

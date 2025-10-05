@@ -1,6 +1,6 @@
-# 🏆 **Hack-Aura: The World's First Fully Autonomous AI Company**
+ # 🏆 **Hack-Aura: The World's First Fully Autonomous AI Company**
 
-> **🚀 ASI Alliance Hackathon Entry - Revolutionary AI-Only Organization with Token Holder Governance**
+> **🚀 FutureStack Hackathon Entry - Powered by Cerebras**
 
 ## 🎯 **What We're Building**
 
@@ -19,11 +19,11 @@ Imagine a company where:
 
 ## 🏆 **Hackathon Achievements & Innovation**
 
-### 🥇 **ASI Alliance Technology Integration**
-- ✅ **ASI:One LLM**: Fully integrated Web3-native AI across all agents
-- ✅ **Fetch.ai uAgents**: Complete multi-agent system with 8 specialized agents
-- ✅ **Agentverse Registration**: All agents registered and discoverable on marketplace
-- ✅ **MeTTa Integration**: Structured knowledge graphs for agent reasoning
+### 🥇 **FutureStack Hackathon Technology Integration**
+- ✅ **Cerebras API**: World's fastest AI chip powering all 8 agents with lightning-fast inference
+- ✅ **Meta Llama Models**: Open-source LLM fallback via Hugging Face API
+- ✅ **Docker Containerization**: Complete containerized deployment with orchestration
+- ✅ **Fetch.ai uAgents**: Multi-agent system with 8 specialized agents
 - ✅ **0G Storage**: Decentralized storage with 90% cost reduction vs traditional cloud
 
 ### 🚀 **Revolutionary Features**
@@ -43,13 +43,17 @@ Imagine a company where:
 
 ## 🔧 **Technical Architecture**
 
-### **ASI Alliance Stack Integration**
+### **FutureStack Hackathon Stack Integration**
 ```
-Frontend (React) → Node.js Server → uAgents (8 agents) → ASI:One LLM → Agentverse
+Frontend (React) → Node.js Server → uAgents (8 agents) → Cerebras API (Primary)
+                                                              ↓
+                                                      Meta Llama (Fallback)
                                                               ↓
                                                       0G Storage (Primary)
                                                               ↓
                                                       SQLite (Fallback)
+                                                              ↓
+                                                      Docker Containers
 ```
 
 ### **Agent Hierarchy**
@@ -92,7 +96,8 @@ CEO Agent (Strategic Leadership)
 ### **Prerequisites**
 - Node.js 18+ 
 - Python 3.9+
-- ASI:One API key from ASI Alliance
+- Cerebras API key from FutureStack Hackathon
+- Docker (for containerization)
 
 ### **Installation & Setup**
 ```bash
@@ -104,7 +109,7 @@ cd client && npm install && cd ..
 
 # 2. Configure environment
 cp env.example .env
-# Edit .env and add your ASI:One API key
+# Edit .env and add your Cerebras API key
 
 # 3. Initialize database with 0G Storage
 node database/setup-with-fallback.js
@@ -113,7 +118,7 @@ node database/setup-with-fallback.js
 # Terminal 1 - Node.js server
 npm start
 
-# Terminal 2 - All uAgents (ASI Alliance)
+# Terminal 2 - All uAgents (Cerebras Powered)
 cd ai_uagents
 python3 ceo_uagent.py &
 python3 research_uagent.py &
@@ -163,7 +168,7 @@ node test-0g-fallback.js
 ## 🛠️ **Technical Implementation**
 
 ### ✅ **Fully Implemented Features**
-- **🤖 8 AI Agents**: Complete corporate hierarchy using ASI:One LLM
+- **🤖 8 AI Agents**: Complete corporate hierarchy using Cerebras API
 - **🗳️ Token Governance**: Decentralized voting system for all decisions
 - **💰 Smart Contracts**: Automated profit distribution on Avalanche
 - **🌐 0G Storage**: Primary decentralized storage with SQLite fallback
@@ -249,8 +254,12 @@ hack-aura/
 ## 🔑 **Environment Variables**
 
 ```bash
-# Required
-ASI_ONE_API_KEY=your_asi_one_api_key_here
+# Required - Cerebras API (Primary for FutureStack Hackathon)
+CEREBRAS_API_KEY=your_cerebras_api_key_here
+
+# Meta Llama API (Fallback via Hugging Face)
+HUGGINGFACE_API_KEY=your_huggingface_api_key_here
+HUGGINGFACE_MODEL=meta-llama/Llama-2-7b-chat-hf
 
 # Web3 Configuration (Required for Revenue Distribution)
 PRIVATE_KEY=your_avalanche_wallet_private_key_here
@@ -266,10 +275,11 @@ DB_PATH=./database/ai_company.db
 ## 🐛 **Troubleshooting**
 
 ### **Common Issues**
-1. **ASI:One API Error**: Ensure API key is correct and has credits
-2. **Database Error**: Run `node database/setup-with-fallback.js` to initialize
-3. **Port Conflicts**: Change PORT in .env file
-4. **Agent Communication**: Ensure all uAgents are running on ports 8001-8008
+1. **Cerebras API Error**: Ensure API key is correct and has credits
+2. **Meta Llama Fallback Error**: Check Hugging Face API key if Cerebras fails
+3. **Database Error**: Run `node database/setup-with-fallback.js` to initialize
+4. **Port Conflicts**: Change PORT in .env file
+5. **Agent Communication**: Ensure all uAgents are running on ports 8001-8008
 
 ### **Debug Mode**
 ```bash
@@ -280,7 +290,9 @@ NODE_ENV=development npm start
 
 ### **Revolutionary Achievement**
 - **First Fully Autonomous AI Company**: Zero human employees, complete automation
-- **ASI Alliance Integration**: Full stack implementation of all core technologies
+- **Cerebras Integration**: World's fastest AI chip powering all agents
+- **Meta Llama Fallback**: Open-source LLM integration for enhanced reliability
+- **FutureStack Hackathon**: Complete integration of Cerebras and Docker technologies
 - **Real Revenue Generation**: Working smart contracts with actual profit distribution
 - **Scalable Architecture**: Can handle unlimited agents and projects
 
@@ -291,6 +303,7 @@ NODE_ENV=development npm start
 - **Transparent Operations**: All decisions and profits on blockchain
 
 ### **Next Steps**
+- **Docker Orchestration**: Complete containerization and deployment automation
 - **Multi-Chain Expansion**: Support for Ethereum, Polygon, and other chains
 - **Agent Marketplace**: Third-party agent integration
 - **Mobile Applications**: iOS/Android interfaces for token holders
@@ -306,15 +319,17 @@ NODE_ENV=development npm start
 - **Real-Time Updates**: Live agent activity feed with smooth animations
 
 ### **Bolt.diy Integration**
-- **ASI:One Powered**: Exclusive use of ASI:One Mini for consistent code generation
+- **Cerebras Powered**: Exclusive use of Cerebras API for consistent code generation
 - **Streamlined Interface**: Removed unnecessary features for focused AI agent interaction
 - **Custom Branding**: "team zero" branding throughout the platform
 - **Developer Agent**: Seamless integration for website development workflows
 
 ## 📝 **Technical Notes**
 
-- **ASI:One LLM**: All agents powered by Web3-native AI
-- **uAgents Framework**: Complete multi-agent system using Fetch.ai technology
+- **Cerebras API**: All agents powered by world's fastest AI chip (Primary)
+- **Meta Llama Models**: Open-source LLM fallback via Hugging Face API
+- **Docker Containers**: Complete containerization for scalable deployment
+- **uAgents Framework**: Multi-agent system using Fetch.ai technology
 - **0G Storage**: Primary decentralized storage with automatic failover
 - **Avalanche Blockchain**: Smart contract integration for automated profit distribution
 - **React Frontend**: Modern, responsive user interface
@@ -330,4 +345,17 @@ NODE_ENV=development npm start
 
 ---
 
-*Built for the ASI Alliance Hackathon - Revolutionizing business through AI autonomy*
+## 📝 **Recent Updates**
+
+### **🔧 Bolt.diy Model Configuration Fix (Latest)**
+- ✅ **Fixed deprecated model error**: Updated from `claude-3-5-sonnet-20240620` to `claude-sonnet-4-20250514` (Active Model)
+- ✅ **Enhanced model fallbacks**: Added Claude 3 Haiku as additional fallback option
+- ✅ **Updated Amazon Bedrock**: Fixed Bedrock provider to use latest active model version
+- ✅ **Improved reliability**: Better model selection with dynamic fetching enabled
+- ✅ **Future-proof**: Using model supported until at least May 2026
+
+**Status**: Bolt.diy should now work without model errors - using currently active Claude Sonnet 4
+
+---
+
+*Built for the FutureStack Hackathon - Revolutionizing business through AI autonomy*

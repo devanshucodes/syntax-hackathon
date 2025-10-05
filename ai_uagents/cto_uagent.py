@@ -216,7 +216,7 @@ Format your response as JSON:
   }}
 }}"""
 
-                response = await self.call_asi_one(prompt, 3000)
+                response = await self.call_cerebras(prompt, 3000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response
@@ -385,7 +385,7 @@ Format your response as JSON:
   }}
 }}"""
 
-                response = await self.call_asi_one(prompt, 3000)
+                response = await self.call_cerebras(prompt, 3000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response

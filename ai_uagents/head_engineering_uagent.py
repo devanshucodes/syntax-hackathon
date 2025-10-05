@@ -148,7 +148,7 @@ Format your response as JSON:
   "bolt_prompt": "Complete Bolt prompt for website generation"
 }}"""
 
-                response = await self.call_asi_one(prompt, 4000)
+                response = await self.call_cerebras(prompt, 4000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response
@@ -284,7 +284,7 @@ Format your response as JSON:
   "bolt_prompt": "Complete Bolt prompt for website generation"
 }}"""
 
-                response = await self.call_asi_one(prompt, 4000)
+                response = await self.call_cerebras(prompt, 4000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response

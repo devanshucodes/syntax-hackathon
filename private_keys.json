@@ -30,5 +30,9 @@
     "Workflow Orchestrator": {
         "identity_key": "364eb77668cc132d0a979e648259d29c536006f8df11abff706b7b6d08553a93",
         "wallet_key": "I/N4oBFkTn296cjvQN3Iqy3NF+8bT3QWxezmi/MW8Ak="
+    },
+    "Research Agent (MeTTa)": {
+        "identity_key": "addfd0f2350787daf05f9b1922c9c477edd293b9ebe1ab1dca140a0da7a9fc9a",
+        "wallet_key": "dQtacMBqFKVHAxkB1IB/cFZkrdC6rNQqkL+BcvXpSQI="
     }
 }

@@ -101,7 +101,7 @@ Format your response as JSON:
   "success_metrics": ["Metric 1", "Metric 2", "Metric 3"]
 }}"""
 
-                response = await self.call_asi_one(prompt, 3000)
+                response = await self.call_cerebras(prompt, 3000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response
@@ -202,7 +202,7 @@ Format your response as JSON:
   "success_metrics": ["Metric 1", "Metric 2", "Metric 3"]
 }}"""
 
-                response = await self.call_asi_one(prompt, 3000)
+                response = await self.call_cerebras(prompt, 3000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response

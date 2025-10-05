@@ -77,7 +77,7 @@ Format your response as JSON with this structure:
   ]
 }}"""
 
-                response = await ceo_agent.call_asi_one(prompt, 2000)
+                response = await ceo_agent.call_cerebras(prompt, 2000)
                 
                 # Parse JSON response
                 try:
@@ -127,7 +127,7 @@ Provide your assessment in JSON format:
   "go_decision": true/false
 }}"""
 
-                response = await ceo_agent.call_asi_one(prompt, 1000)
+                response = await ceo_agent.call_cerebras(prompt, 1000)
                 
                 # Parse JSON response
                 try:
@@ -182,7 +182,7 @@ Provide your assessment in JSON format:
                   "next_steps": "What happens next"
                 }}"""
 
-                response = await self.call_asi_one(prompt, 500)
+                response = await self.call_cerebras(prompt, 500)
                 
                 # Parse JSON response
                 try:
@@ -246,7 +246,7 @@ Provide your assessment in JSON format:
   "go_decision": true/false
 }}"""
 
-                response = await self.call_asi_one(prompt, 1000)
+                response = await self.call_cerebras(prompt, 1000)
                 
                 # Parse JSON response
                 try:

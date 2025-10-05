@@ -102,7 +102,7 @@ class ResearchMettauAgent(BaseUAgent):
                 enhanced_prompt = self.create_enhanced_prompt(msg.idea, industry_insights, historical_context)
                 
                 print(f"🧠 [{self.name}] Calling ASI:One with MeTTa context...")
-                response = await self.call_asi_one(enhanced_prompt, 3000)
+                response = await self.call_cerebras(enhanced_prompt, 3000)
                 
                 # Step 4: Parse and enhance response
                 research_data = self.parse_research_response(response)
@@ -159,7 +159,7 @@ class ResearchMettauAgent(BaseUAgent):
                 enhanced_prompt = self.create_enhanced_prompt(req.idea, industry_insights, historical_context)
                 
                 print(f"🧠 [{self.name}] REST: Calling ASI:One with MeTTa context...")
-                response = await self.call_asi_one(enhanced_prompt, 3000)
+                response = await self.call_cerebras(enhanced_prompt, 3000)
                 
                 # Parse and enhance response
                 research_data = self.parse_research_response(response)

@@ -88,7 +88,7 @@ Format your response as JSON with these fields:
   "confidence_level": "high/medium/low"
 }}"""
 
-                response = await self.call_asi_one(prompt, 2000)
+                response = await self.call_cerebras(prompt, 2000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response
@@ -156,7 +156,7 @@ Generate a professional financial report including:
 
 Format as a markdown report."""
 
-                response = await self.call_asi_one(prompt, 3000)
+                response = await self.call_cerebras(prompt, 3000)
                 
                 # Create summary from the data
                 summary = {
@@ -225,7 +225,7 @@ Format your response as JSON with these fields:
   "confidence_level": "high/medium/low"
 }}"""
 
-                response = await self.call_asi_one(prompt, 2000)
+                response = await self.call_cerebras(prompt, 2000)
                 
                 # Clean the response to handle JSON parsing issues
                 cleaned_response = response
@@ -289,7 +289,7 @@ Generate a professional financial report including:
 
 Format as a markdown report."""
 
-                response = await self.call_asi_one(prompt, 3000)
+                response = await self.call_cerebras(prompt, 3000)
                 
                 # Create summary from the data
                 summary = {
