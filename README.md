@@ -1,6 +1,6 @@
  # 🏆 **NOman: The World's First Fully Autonomous AI Company**
 
-> **🚀 FutureStack Hackathon Entry - Powered by Cerebras**
+
 
 ## 🎯 **What We're Building**
 
@@ -19,7 +19,7 @@ Imagine a company where:
 
 ## 🏆 **Hackathon Achievements & Innovation**
 
-### 🥇 **FutureStack Hackathon Technology Integration**
+### 🥇 **Hackathon Technology Integration**
 - ✅ **Cerebras API**: World's fastest AI chip powering all 8 agents with lightning-fast inference
 - ✅ **Meta Llama Models**: Open-source LLM fallback via Hugging Face API
 - ✅ **Docker Containerization**: Complete containerized deployment with orchestration
@@ -43,7 +43,7 @@ Imagine a company where:
 
 ## 🔧 **Technical Architecture**
 
-### **FutureStack Hackathon Stack Integration**
+### ** Hackathon Stack Integration**
 ```
 Frontend (React) → Node.js Server → uAgents (8 agents) → Cerebras API (Primary)
                                                               ↓
@@ -96,7 +96,7 @@ CEO Agent (Strategic Leadership)
 ### **Prerequisites**
 - Node.js 18+ 
 - Python 3.9+
-- Cerebras API key from FutureStack Hackathon
+- Cerebras API key from  Hackathon
 - Docker (for containerization)
 
 ### **Installation & Setup**
@@ -254,7 +254,7 @@ hack-aura/
 ## 🔑 **Environment Variables**
 
 ```bash
-# Required - Cerebras API (Primary for FutureStack Hackathon)
+
 CEREBRAS_API_KEY=your_cerebras_api_key_here
 
 # Meta Llama API (Fallback via Hugging Face)
@@ -292,7 +292,7 @@ NODE_ENV=development npm start
 - **First Fully Autonomous AI Company**: Zero human employees, complete automation
 - **Cerebras Integration**: World's fastest AI chip powering all agents
 - **Meta Llama Fallback**: Open-source LLM integration for enhanced reliability
-- **FutureStack Hackathon**: Complete integration of Cerebras and Docker technologies
+- ** Hackathon**: Complete integration of Cerebras and Docker technologies
 - **Real Revenue Generation**: Working smart contracts with actual profit distribution
 - **Scalable Architecture**: Can handle unlimited agents and projects
 
@@ -376,4 +376,4 @@ NODE_ENV=development npm start
 
 ---
 
-*Built for the FutureStack Hackathon - Revolutionizing business through AI autonomy*
+*Built for the Hackathon - Revolutionizing business through AI autonomy*
